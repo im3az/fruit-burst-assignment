@@ -25,17 +25,71 @@
         .font-lato {
             font-family: 'Lato', sans-serif;
         }
-        
     </style>
 
 </head>
 
-<body>
-    
-    <header></header>
+<body class="font-lato">
+
+    <header class="container mx-auto">
+
+        <div class="navbar my-5 lg:my-14 bg-none md:bg-[#FFFFFF] lg:bg-[#F85559] rounded-full  lg:text-white h-24">
+
+            <div class="navbar-start">
+
+                <a class="gap-3 text-3xl font-bold ml-2 flex md:flex lg:hidden"><img src="images/logo.png" class="h-10" alt="">Fruit Burst</a>
+
+                <div class="dropdown ">
+                    <ul class="menu menu-horizontal px-10 hidden lg:flex  text-lg">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+
+                    
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="navbar-center flex">
+                <a class="gap-3 text-4xl font-bold hidden md:hidden lg:flex"><img src="images/logo.png" class="h-10" alt="">Fruit Burst</a>
+            </div>
+
+
+            <div class="navbar-end justify-end lg:pr-6  relative">
+                <input type="text" placeholder="Search here" class="input input-bordered w-96 h-11 max-w-xs rounded-full hidden md:flex lg:flex" />
+                <i class="fas fa-search absolute right-4 md:right-24 lg:right-12 text-[#121212] hidden md:flex lg:flex"></i>
+
+                <div class="dropdown ">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-1 shadow bg-base-100 rounded-box w-24">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+    </header>
 
     <main></main>
-    
+
     <footer></footer>
 
 </body>
