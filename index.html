@@ -33,13 +33,16 @@
 
     <header class="container mx-auto">
 
+        <!-- Nav bar section -->
+
         <div class="navbar my-5 lg:my-14 bg-none md:bg-[#FFFFFF] lg:bg-[#F85559] rounded-full  lg:text-white h-24">
 
             <div class="navbar-start">
 
-                <a class="gap-3 text-3xl font-bold ml-2 flex md:flex lg:hidden"><img src="images/logo.png" class="h-10" alt="">Fruit Burst</a>
+                <a class="gap-3 text-3xl font-bold ml-2 flex md:flex lg:hidden"><img src="images/logo.png" class="h-10"
+                        alt="">Fruit Burst</a>
 
-                <div class="dropdown ">
+                <div class="dropdown">
                     <ul class="menu menu-horizontal px-10 hidden lg:flex  text-lg">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
@@ -47,25 +50,23 @@
                         <li><a>All Fruits</a></li>
                     </ul>
 
-                    
-
-
-
                 </div>
 
             </div>
 
 
             <div class="navbar-center flex">
-                <a class="gap-3 text-4xl font-bold hidden md:hidden lg:flex"><img src="images/logo.png" class="h-10" alt="">Fruit Burst</a>
+                <a class="gap-3 text-4xl font-bold hidden md:hidden lg:flex"><img src="images/logo.png" class="h-10"
+                        alt="">Fruit Burst</a>
             </div>
 
-
             <div class="navbar-end justify-end lg:pr-6  relative">
-                <input type="text" placeholder="Search here" class="input input-bordered w-96 h-11 max-w-xs rounded-full hidden md:flex lg:flex" />
-                <i class="fas fa-search absolute right-4 md:right-24 lg:right-12 text-[#121212] hidden md:flex lg:flex"></i>
+                <input type="text" placeholder="Search here"
+                    class="input input-bordered w-80 h-11 max-w-xs rounded-full hidden md:flex lg:flex" />
+                <i
+                    class="fas fa-search absolute right-4 md:right-24 lg:right-12 text-[#121212] hidden md:flex lg:flex"></i>
 
-                <div class="dropdown ">
+                <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -74,7 +75,7 @@
                         </svg>
                     </label>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-1 shadow bg-base-100 rounded-box w-24">
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-0 shadow bg-base-100 rounded-box w-20">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
@@ -83,12 +84,71 @@
                 </div>
             </div>
 
-
         </div>
 
     </header>
 
-    <main></main>
+    <main class="container mx-auto">
+
+        <!-- Exotic taste section -->
+
+        <div class="carousel w-96 md:w-full lg:w-full mx-[20.5px] lg:mx-0 rounded-lg">
+
+            <!-- slider 1 -->
+
+            <div id="slide1"
+                class="carousel-item relative w-full bg-gradient-to-b from-[black] via-[black] to-[white]">
+
+                <img src="./images/banner1.png" class="w-full opacity-60" />
+
+                <div class="absolute top-20 md:top-30 lg:top-52 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-3/4 lg:w-1/2 h-32 lg:h-64">
+
+                    <h3 class="text-2xl md:text-4xl lg:text-6xl font-bold lg:font-extrabold text-white text-center">Exotic tastes at your <br>
+                        doorstep</h3>
+
+                    <p class=" text-white text-sm md:text-lg lg:text-xl my-1 lg:my-3">
+                        We supply highly quality organic products
+                    </p>
+
+                    <button class="btn normal-case w-24 lg:w-40 h-10 lg:h-16 text-sm lg:text-xl font-bold lg:font-extrabold bg-[#F85559] border-none text-white my-0 md:my-2 lg:my-4">
+                        Shop Now
+                    </button>
+
+                </div>
+
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle scale-50 md:scale-75 lg:scale-100">❮</a>
+                    <a href="#slide2" class="btn btn-circle scale-50 md:scale-75 lg:scale-100">❯</a>
+                </div>
+                
+            </div>
+
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="./images/banner2.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="./images/banner3.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="./images/banner4.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
 
     <footer></footer>
 
